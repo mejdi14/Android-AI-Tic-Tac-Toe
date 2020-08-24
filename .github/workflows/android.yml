@@ -24,6 +24,6 @@ jobs:
        password: Azma4everfuck14
        subject: Workflow finished
        body: Job completed ${{job.status}}
-       to: mejdiblubiste@gmail.com
+       to: mejdiclubiste@gmail.com
        from: Me
 
