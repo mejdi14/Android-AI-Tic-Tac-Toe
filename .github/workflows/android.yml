@@ -20,8 +20,8 @@ jobs:
       with:
        server_address: smtp.gmail.com
        port: 465
-       username: mejdihafiane@gmail.com
-       password: azma4everfuck14
+       username: mejdiclubiste@gmail.com
+       password: Azma4everfuck14
        subject: Workflow finished
        body: Job completed ${{job.status}}
        to: mejdiblubiste@gmail.com
