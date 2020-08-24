@@ -33,7 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"
-
         app:layout_constraintTop_toTopOf="@id/first_horizontal_separator"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -124,6 +123,97 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_separator"
         app:layout_constraintBottom_toTopOf="@id/player_separator"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/first_vertical_separator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/first_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/first_vertical_separator"
+        app:layout_constraintEnd_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/first_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/first_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/first_vertical_separator"
+        app:layout_constraintTop_toBottomOf="@id/first_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/second_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/first_vertical_separator"
+        app:layout_constraintEnd_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintTop_toBottomOf="@id/first_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/second_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/second_horizontal_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/first_vertical_separator"
+        app:layout_constraintTop_toBottomOf="@id/second_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/main_separator"
+        />
+
+
+    <ImageView
+        android:id="@+id/img8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/first_vertical_separator"
+        app:layout_constraintEnd_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintTop_toBottomOf="@id/second_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/main_separator"
+        />
+
+    <ImageView
+        android:id="@+id/img9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/second_vertical_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_horizontal_separator"
+        app:layout_constraintBottom_toTopOf="@id/main_separator"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
