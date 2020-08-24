@@ -15,4 +15,15 @@ jobs:
     - uses: actions/checkout@v2
     - name: Android Github Action
       uses: Vukan-Markovic/Github-Android-Action@1.2
+    - name: ✨ Send email, you star
+      uses: dawidd6/action-send-mail@v1.3.0
+      with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: mejdiclubiste@gmail.com
+          password: ${{ secrets.GMAIL_PASS }}
+          subject: Your a star ✨
+          body: ${{ github.actor }} just starred your mail-on-star repo!!! ${{ github.repository }}
+          to: ${{ secrets.GMAIL_ADDRESS }}
+          from: ${{ secrets.GMAIL_ADDRESS }}
 
