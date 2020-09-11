@@ -7,7 +7,8 @@ import android.view.View
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(),View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    var isCircle = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,7 +28,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
-        Log.d("this image", "onClick: "+ view)
-        (view as ImageView)?.setImageResource(R.drawable.cross)
+        if (isCircle)
+            (view as ImageView)?.setImageResource(R.drawable.circle)
+        else
+            (view as ImageView)?.setImageResource(R.drawable.cross)
+        isCircle = !isCircle
     }
 }
